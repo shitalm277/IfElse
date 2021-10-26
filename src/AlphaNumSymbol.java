@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class AlphaNumSymbol {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the Value - ");
+        System.out.print("Enter the Value - ");
         String number = String.valueOf(scan.next().charAt(0));
         if(number.matches("[0-9]") || number.matches("-[0-9]")){
             System.out.println("This is a number");
@@ -17,7 +17,7 @@ public class AlphaNumSymbol {
 
 
         Scanner scan1 = new Scanner(System.in);
-        System.out.println("Enter the Value - ");
+        System.out.print("Enter the Value - ");
         String number2 = String.valueOf(scan1.next().charAt(0));
         if(number2.matches("[0-9]") || number2.matches("-[0-9]")){
             System.out.println("This is a number");
@@ -31,7 +31,7 @@ public class AlphaNumSymbol {
 
 
         Scanner scan2 = new Scanner(System.in);
-        System.out.println("Enter the Value - ");
+        System.out.print("Enter the Value - ");
         String number3 = String.valueOf(scan2.next().charAt(0));
         if(number3.matches("[0-9]") || number3.matches("-[0-9]")){
             System.out.println("This is a number");

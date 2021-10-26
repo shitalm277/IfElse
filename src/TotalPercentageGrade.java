@@ -26,21 +26,36 @@ public class TotalPercentageGrade {
 
         int total = marks1 + marks2 + marks3;
         float percentage = (float) (total / 300.0 * 100.0);
-        String grade = "";
+        String grade = " ";
+        String result;
 
         if (percentage >= 80) {
-            System.out.println(grade = "A+" + " " + "PASS");
+            grade = "A+";
+            result = "PASS";
         } else if (percentage >= 60) {
-            System.out.println(grade = "A" + " " + "PASS");
+            grade = "A";
+            result = "Pass";
         } else if (percentage >= 50) {
-            System.out.println(grade = "B" + " " + "PASS");
+            grade = "B";
+            result = "PASS";
         } else if (percentage >= 35) {
-            System.out.println(grade = "C" + " " + "PASS");
+            grade = "C";
+            result = "PASS";
         } else {
-            System.out.println("FAIL");
+            result = "FAIL";
         }
-        System.out.println("Total Marks = " + total);
-        System.out.println("Percentage = " + percentage);
-        System.out.println("Grade = " + grade);
+        if (result == "PASS")
+        {
+            System.out.println("Total Marks = " + total);
+            System.out.println("Percentage = " + percentage);
+            System.out.println("Grade = " + grade);
+            System.out.println("Result = " + result);
+        }
+        else
+        {
+            System.out.println("Total MArks = " +total);
+            System.out.println("Percentage = " +percentage);
+            System.out.println("Result = " +result);
+        }
     }
 }
